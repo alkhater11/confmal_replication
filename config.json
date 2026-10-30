@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "kronodroid": {
+    "repository": "https://github.com/aleguma/kronodroid",
+    "commit": "c6ec342167bc449967a802824d068900ac8120c5",
+    "zip_sha256": {
+      "real_device/real_malware_v1.zip": "03aa36a9c3aa3430523fcf87042659562e5af3219688562087107817095cb8cd",
+      "real_device/real_legitimate_v1.zip": "21f6d507321856eefa6c40a31f484d3e532b5dea23144e3c2a9470161bd5f782",
+      "emulator/emu_malware_v1.zip": "c5758b2957db65c704db032bac987d47be30d0374dfacac1357757ebe652aec4",
+      "emulator/emu_legitimate_v1.zip": "de3ba7838a6d660adc16be06b49db8f9f63ee8a055cc9ff0576e302d303ce8a2"
+    }
+  },
+  "dropped_columns": ["Package", "sha256", "MalFamily", "Malware",
+                      "EarliestModDate", "HighestModDate", "FirstModDate", "LastModDate",
+                      "Scanners", "Detection_Ratio", "TimesSubmitted", "NrContactedIps"],
+  "date_columns": ["EarliestModDate", "FirstModDate"],
+  "year_range": [2008, 2020],
+  "window_years": [2008, 2012],
+  "deployment_years": [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+  "window_split_fractions": {"fit": 0.60, "calibration": 0.25, "in_window_test": 0.15},
+  "alpha": 0.10,
+  "alpha_sweep": [0.05, 0.10, 0.20],
+  "seeds_main": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "seeds_enbpi": [0, 1, 2, 3, 4],
+  "seeds_diagnostic": [0, 1, 2, 3, 4],
+  "seeds_family": [0, 1, 2, 3, 4],
+  "seeds_ablation": [0, 1, 2, 3, 4],
+  "base_detectors": {
+    "RandomForest": {"n_estimators": 200, "min_samples_leaf": 2, "class_weight": "balanced_subsample"},
+    "HistGB": {"max_iter": 150},
+    "LogReg": {"C": 1.0, "max_iter": 2000, "standardise": true}
+  },
+  "weighted_cp": {"domain_C": 0.1, "domain_max_iter": 400, "max_per_side": 4000},
+  "aci": {"gamma": 0.01, "gamma_sweep": [0.001, 0.005, 0.01, 0.05],
+          "delays_days": [7, 30, 90, 180, 365],
+          "partial_rates": [0.5, 0.2, 0.1, 0.05]},
+  "recalibration_window": 2000,
+  "enbpi": {"B": 10, "window": 2000, "RandomForest_trees": 60, "HistGB_iter": 60},
+  "fixed_priors": [0.10, 0.50, 0.90],
+  "resampled_stream": {"priors": [0.50, 0.90], "replicates": 20},
+  "deferral_target_accuracy": 0.90,
+  "diagnostic": {"K_blocks": 10, "fit_blocks": 4, "cal_blocks": 1, "breach_thresholds": [0.85, 0.80, 0.70]}
+}

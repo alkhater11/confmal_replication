@@ -1,0 +1,97 @@
+{
+ "raw_records": 78137,
+ "raw_malware": 41382,
+ "raw_benign": 36755,
+ "invalid_date": 1513,
+ "invalid_date|malware": 488,
+ "invalid_date|benign": 1025,
+ "non_numeric_feature": 617,
+ "non_numeric_feature|malware": 360,
+ "non_numeric_feature|benign": 257,
+ "duplicate_sha256": 4,
+ "duplicate_sha256|malware": 0,
+ "duplicate_sha256|benign": 4,
+ "outside_2008_2020:epoch_1980": 6901,
+ "outside_2008_2020:epoch_1980|malware": 2688,
+ "outside_2008_2020:epoch_1980|benign": 4213,
+ "outside_2008_2020:pre_2008": 495,
+ "outside_2008_2020:pre_2008|malware": 201,
+ "outside_2008_2020:pre_2008|benign": 294,
+ "outside_2008_2020:post_2020": 2,
+ "outside_2008_2020:post_2020|malware": 0,
+ "outside_2008_2020:post_2020|benign": 2,
+ "kept": 68605,
+ "kept|malware": 37645,
+ "kept|benign": 30960,
+ "parsed_records": 76007,
+ "outside_2008_2020_total": 7398,
+ "n_features": 474,
+ "per_year": {
+  "2008": {
+   "n": 1821,
+   "malware": 1648,
+   "benign": 173
+  },
+  "2009": {
+   "n": 1516,
+   "malware": 165,
+   "benign": 1351
+  },
+  "2010": {
+   "n": 8870,
+   "malware": 821,
+   "benign": 8049
+  },
+  "2011": {
+   "n": 23074,
+   "malware": 4548,
+   "benign": 18526
+  },
+  "2012": {
+   "n": 7968,
+   "malware": 7626,
+   "benign": 342
+  },
+  "2013": {
+   "n": 7195,
+   "malware": 6703,
+   "benign": 492
+  },
+  "2014": {
+   "n": 6765,
+   "malware": 6131,
+   "benign": 634
+  },
+  "2015": {
+   "n": 2152,
+   "malware": 1434,
+   "benign": 718
+  },
+  "2016": {
+   "n": 2988,
+   "malware": 2473,
+   "benign": 515
+  },
+  "2017": {
+   "n": 4063,
+   "malware": 3987,
+   "benign": 76
+  },
+  "2018": {
+   "n": 1738,
+   "malware": 1696,
+   "benign": 42
+  },
+  "2019": {
+   "n": 191,
+   "malware": 156,
+   "benign": 35
+  },
+  "2020": {
+   "n": 264,
+   "malware": 257,
+   "benign": 7
+  }
+ },
+ "kept_malware_families": 224
+}

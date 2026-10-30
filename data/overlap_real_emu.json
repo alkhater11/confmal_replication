@@ -1,0 +1,96 @@
+{
+ "real_kept": 68605,
+ "emu_kept": 56696,
+ "shared": 56036,
+ "real_only": 12569,
+ "emu_only": 660,
+ "shared_frac_of_emu": 0.988358967122901,
+ "shared_frac_of_real": 0.8167917790248524,
+ "label_mismatch_on_shared": 0,
+ "year_mismatch_on_shared": 0,
+ "per_year": {
+  "2008": {
+   "emu": 1464,
+   "shared": 1430,
+   "emu_only_malware": 28,
+   "emu_only_benign": 6
+  },
+  "2009": {
+   "emu": 1430,
+   "shared": 1410,
+   "emu_only_malware": 1,
+   "emu_only_benign": 19
+  },
+  "2010": {
+   "emu": 8410,
+   "shared": 8331,
+   "emu_only_malware": 7,
+   "emu_only_benign": 72
+  },
+  "2011": {
+   "emu": 21560,
+   "shared": 21282,
+   "emu_only_malware": 24,
+   "emu_only_benign": 254
+  },
+  "2012": {
+   "emu": 6613,
+   "shared": 6576,
+   "emu_only_malware": 34,
+   "emu_only_benign": 3
+  },
+  "2013": {
+   "emu": 5504,
+   "shared": 5487,
+   "emu_only_malware": 14,
+   "emu_only_benign": 3
+  },
+  "2014": {
+   "emu": 5410,
+   "shared": 5384,
+   "emu_only_malware": 20,
+   "emu_only_benign": 6
+  },
+  "2015": {
+   "emu": 1784,
+   "shared": 1692,
+   "emu_only_malware": 80,
+   "emu_only_benign": 12
+  },
+  "2016": {
+   "emu": 2393,
+   "shared": 2359,
+   "emu_only_malware": 29,
+   "emu_only_benign": 5
+  },
+  "2017": {
+   "emu": 509,
+   "shared": 488,
+   "emu_only_malware": 21,
+   "emu_only_benign": 0
+  },
+  "2018": {
+   "emu": 1202,
+   "shared": 1190,
+   "emu_only_malware": 10,
+   "emu_only_benign": 2
+  },
+  "2019": {
+   "emu": 169,
+   "shared": 166,
+   "emu_only_malware": 3,
+   "emu_only_benign": 0
+  },
+  "2020": {
+   "emu": 248,
+   "shared": 241,
+   "emu_only_malware": 7,
+   "emu_only_benign": 0
+  }
+ },
+ "n_static_compared": 184,
+ "n_dynamic_compared": 289,
+ "shared_with_any_static_difference": 0.0,
+ "shared_with_any_dynamic_difference": 0.9993754015275894,
+ "shared_family_label_agreement": 0.9709650938682276
+}
